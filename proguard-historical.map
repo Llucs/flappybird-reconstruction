@@ -1,0 +1,228 @@
+com.dotgears.AdHideRunnable -> com.dotgears.a:
+com.dotgears.AdShowRunnable -> com.dotgears.b:
+com.dotgears.GameActivity -> com.dotgears.GameActivity:
+    com.google.ads.AdView adView -> a
+    org.andengine.audio.sound.Sound soundPoint -> b
+    org.andengine.audio.sound.Sound soundDie -> c
+    org.andengine.audio.sound.Sound soundHit -> d
+    org.andengine.audio.sound.Sound soundSwooshing -> e
+    org.andengine.audio.sound.Sound soundWing -> f
+    com.google.example.games.basegameutils.GameHelper gameHelper -> g
+    int requestedClients -> h
+    java.lang.String gameHelperTag -> i
+    boolean enableGameHelper -> j
+    org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas gameAtlas -> m
+    org.andengine.opengl.texture.region.TextureRegion gameRegion -> n
+    java.lang.String[] gameHelperScopes -> o
+    org.andengine.engine.Engine onCreateEngine(org.andengine.engine.options.EngineOptions) -> a
+    org.andengine.engine.options.EngineOptions onCreateEngineOptions() -> a
+    void onSetContentView() -> b
+    void c() -> c
+    void d() -> d
+    void e() -> e
+    void f() -> f
+    void g() -> g
+    void h() -> h
+    void i() -> i
+    void onSignInFailed() -> j
+    void onSignInSucceeded() -> k
+    void onCreateResources() -> l
+    org.andengine.entity.scene.Scene onCreateScene() -> m
+    com.google.android.gms.games.c n() -> n
+    boolean o() -> o
+    void p() -> p
+com.dotgears.GameScene -> com.dotgears.c:
+    org.andengine.entity.sprite.Sprite[] drawables -> a
+    int drawIndex -> c
+    com.dotgears.GameActivity activity -> d
+    int storedBestScore -> e
+    int drawableCapacity -> b
+    float[] touchX -> f
+    float[] touchY -> g
+    boolean touchPending -> h
+    int lastTouchX -> i
+    int lastTouchY -> j
+com.dotgears.BirdAnimation -> com.dotgears.d:
+com.dotgears.BlinkEntity -> com.dotgears.e:
+com.dotgears.GameButton -> com.dotgears.f:
+com.dotgears.GameController -> com.dotgears.g:
+    com.dotgears.GameController current -> D
+    com.dotgears.AtlasRegion[] atlasRegions -> a
+    int[] eventDurations -> b
+    int[] eventCodes -> c
+    com.dotgears.GameEntity[] eventEntities -> d
+    int eventMode -> q
+    int[] touchX -> s
+    int[] touchY -> t
+    int[] actionCodes -> w
+    double[] actionValues -> x
+    int eventCount -> e
+    int bestScore -> z
+    int mode -> A
+    int score -> y
+    int actionCount -> v
+    int shakeX -> i
+    int touchCount -> u
+    int pendingAction -> g
+    int shakeY -> j
+    int shakeAmount -> k
+    int shakeFrames -> l
+    boolean gameOver -> r
+    com.dotgears.Tween fadeOut -> f
+    com.dotgears.Tween fadeIn -> h
+    com.dotgears.EntityPool particles -> m
+    com.dotgears.EntityPool blinks -> n
+    com.dotgears.AtlasRegion blackRegion -> o
+    com.dotgears.AtlasRegion whiteRegion -> p
+    com.dotgears.ScoreNumber scoreNumber -> B
+    com.dotgears.ScorePanel scorePanel -> C
+    float fixedStep -> E
+    void setEventTiming(int,float) -> a
+com.dotgears.BitmapText -> com.dotgears.h:
+    java.lang.String digits -> l
+    int maximumHeight -> c
+    int spacing -> d
+    int x -> f
+    int y -> g
+    int alignment -> e
+    float scale -> h
+    com.dotgears.AtlasRegion[] glyphs -> a
+    int[] widths -> b
+    char[] text -> i
+    char[] reversedText -> j
+    int textLength -> k
+com.dotgears.AtlasRegion -> com.dotgears.i:
+    int nextId -> h
+    java.lang.String name -> a
+    int width -> b
+    int height -> c
+    float u -> d
+    float v -> e
+    float widthU -> f
+    float heightV -> g
+    int id -> i
+com.dotgears.MathUtils -> com.dotgears.j:
+    float easingQuadraticInOut(int) -> u
+    float easingBounceOut(int) -> t
+    float easingBounceInOut(int) -> v
+com.dotgears.Medal -> com.dotgears.k:
+com.dotgears.ScoreNumber -> com.dotgears.l:
+com.dotgears.GameEntity -> com.dotgears.m:
+com.dotgears.EntityPool -> com.dotgears.n:
+com.dotgears.FloatingScore -> com.dotgears.o:
+    boolean showPlus -> c
+    int duration -> d
+    int value -> e
+    int digitCount -> f
+    int verticalVelocity -> g
+    int velocityStep -> h
+    int frame -> i
+    int x -> j
+    int y -> k
+    int baselineOffset -> l
+    int digitWidth -> a
+    int digitSpacing -> b
+    com.dotgears.AtlasRegion[] numberRegions -> m
+    void update(float) -> a
+    void draw(com.dotgears.GameController) -> a
+    void drawDigits(com.dotgears.GameController,int,int,int,boolean,int) -> a
+com.dotgears.ScorePanel -> com.dotgears.p:
+    int x -> a
+    int y -> b
+    int width -> c
+    int height -> d
+    int score -> e
+    int bestScore -> f
+    int targetScore -> g
+    int bronzeThreshold -> h
+    int silverThreshold -> i
+    int goldThreshold -> j
+    int platinumThreshold -> k
+    int state -> l
+    boolean newBest -> m
+    int centerY -> n
+    com.dotgears.Medal medal -> o
+    com.dotgears.Tween slideTween -> p
+    com.dotgears.AtlasRegion newLabel -> q
+    com.dotgears.AtlasRegion panel -> r
+    com.dotgears.ScoreNumber scoreNumber -> s
+com.dotgears.AnimatedEntity -> com.dotgears.q:
+    com.dotgears.BirdAnimation[] animations -> a
+    int x -> b
+    int y -> c
+    int frameState -> d
+    int width -> e
+    int height -> f
+    int offsetX -> g
+    int offsetY -> h
+    float scale -> i
+    com.dotgears.BirdAnimation currentAnimation -> j
+    boolean animationFinished -> k
+    boolean animationActive -> l
+    boolean animationEnabled -> m
+    boolean animationVisible -> n
+    int regionCount -> o
+    com.dotgears.AtlasRegion[] frames -> p
+com.dotgears.Tween -> com.dotgears.r:
+com.dotgears.flappy.Bird -> com.dotgears.flappy.a:
+com.dotgears.flappy.BitmapFont -> com.dotgears.flappy.b:
+com.dotgears.flappy.FlappyScene -> com.dotgears.flappy.c:
+    boolean gameOverScreen -> H
+    boolean scoreCommitted -> I
+    com.dotgears.flappy.Bird bird -> J
+    com.dotgears.GameButton playButton -> K
+    com.dotgears.GameButton okButton -> L
+    com.dotgears.GameButton pauseButton -> M
+    com.dotgears.GameButton resumeButton -> N
+    com.dotgears.GameButton menuButton -> O
+    com.dotgears.GameButton scoreButton -> P
+    com.dotgears.GameButton shareButton -> Q
+    com.dotgears.GameButton rateButton -> R
+    com.dotgears.ScoreNumber scoreDigits -> S
+    com.dotgears.AtlasRegion background -> T
+    com.dotgears.AtlasRegion dayBackground -> U
+    com.dotgears.AtlasRegion nightBackground -> V
+    com.dotgears.AtlasRegion forestBackground -> W
+    com.dotgears.AtlasRegion land -> X
+    com.dotgears.AtlasRegion pipeUp -> Y
+    com.dotgears.AtlasRegion pipeDown -> Z
+    com.dotgears.AtlasRegion title -> aa
+    com.dotgears.AtlasRegion copyright -> ab
+    int groundOffset -> ac
+    int firstPipeY -> ad
+    int secondPipeY -> ae
+    int thirdPipeY -> af
+    int firstPipeX -> ag
+    int secondPipeX -> ah
+    int thirdPipeX -> ai
+    int pipeSpacing -> aj
+    int pipeSpeed -> ao
+    int remainingInitialPipes -> ak
+    com.dotgears.flappy.ReadyBanner readyBanner -> al
+    com.dotgears.flappy.GameOverBanner gameOverBanner -> am
+    com.dotgears.BitmapText scoreFont -> an
+    boolean initialized -> ap
+    boolean intersects(int,int,int,int,int,int,int,int) -> a
+    void handleInput(int,int) -> a
+    void handleTouch(int,int,int,int) -> a
+    void handleEvent(int,com.dotgears.GameEntity) -> a
+    void updateLogic(float) -> b
+    void createScene() -> c
+    void resetRound() -> e
+com.dotgears.flappy.SplashScreen -> com.dotgears.flappy.SplashScreen:
+    int SPLASH_DELAY -> a
+com.dotgears.flappy.SplashTransition -> com.dotgears.flappy.d:
+com.dotgears.flappy.GameOverBanner -> com.dotgears.flappy.e:
+com.dotgears.flappy.ReadyBanner -> com.dotgears.flappy.f:
+com.google.example.games.basegameutils.GameHelper -> com.google.example.games.basegameutils.a:
+com.google.example.games.basegameutils.GameHelperListener -> com.google.example.games.basegameutils.b:
+com.google.example.games.basegameutils.ConnectionFailureInfo -> com.google.example.games.basegameutils.c:
+com.google.example.games.basegameutils.GameHelperResolution -> com.google.example.games.basegameutils.d:
+com.google.example.games.basegameutils.GameHelperResourceIds -> com.google.example.games.basegameutils.e:
+org.andengine.entity.scene.Scene -> org.andengine.c.b.e:
+org.andengine.ui.activity.BaseGameActivity$1 -> org.andengine.ui.activity.a:
+org.andengine.ui.activity.BaseGameActivity$2 -> org.andengine.ui.activity.b:
+org.andengine.ui.activity.BaseGameActivity$3 -> org.andengine.ui.activity.c:
+org.andengine.ui.activity.BaseGameActivity$4 -> org.andengine.ui.activity.d:
+org.andengine.engine.options.AudioOptions -> org.andengine.b.c.a:
+    org.andengine.engine.options.AudioOptions setNeedsMusic(boolean) -> b
