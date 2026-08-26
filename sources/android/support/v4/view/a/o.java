@@ -1,0 +1,12 @@
+package android.support.v4.view.a;
+
+/* JADX INFO: loaded from: classes.dex */
+class o extends q {
+    o() {
+    }
+
+    @Override // android.support.v4.view.a.q, android.support.v4.view.a.l
+    public Object a(k kVar) {
+        return u.a(new p(this, kVar));
+    }
+}

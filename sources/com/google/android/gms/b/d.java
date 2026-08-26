@@ -1,0 +1,6 @@
+package com.google.android.gms.b;
+
+/* JADX INFO: loaded from: classes.dex */
+interface d {
+    void a(a aVar);
+}
